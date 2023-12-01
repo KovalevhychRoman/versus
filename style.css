@@ -1,0 +1,350 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* common styles */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header styles */
+.header {
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    font-size: 11px;
+    line-height: 154.545%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* .menu li:last-child {
+    margin: 0;
+}
+.menu li:first-child {
+    margin: 0;
+}
+.menu li:nth-child(2) {
+    margin: 0;
+} */
+
+.menu a {
+    color: #999;
+    transition: color 0.5s;
+}
+
+.menu a:hover {
+    color: #00D6B4;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* banner styles */
+.banner {
+    min-height: 540px;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.417%;
+    /* 53px */
+}
+
+.banner a {
+    color: #00D6B4;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.154%;
+    /* 19px */
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #00D6B4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 26px;
+    padding-left: 26px;
+    display: inline-block;
+    margin-top: 29px;
+    transition: all 0.5s;
+    /* transition: background-color 0.5s, color 0.5s; */
+}
+.banner a:hover {
+    color: #FFF;
+    background-color: #00D6B4;
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+    text-align: center;
+}
+
+.works {
+    background: #222;
+    padding-top: 49px;
+    padding-bottom: 101px;
+}
+
+.works h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+    margin-bottom: 33px;
+}
+
+.work-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-items img {
+    width: calc(100% / 3 - 40px / 3);
+}
+
+.logo-footer {
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.222%
+        /*22px */
+    ;
+    text-transform: uppercase;
+
+}
+
+.credits {
+    color: #999;
+
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%
+        /* 18px; */
+}
+
+.footer {
+    background: #222;
+    padding-top: 35px;
+    padding-bottom: 37px;
+}
+
+
+/* media queries */
+
+@media (max-width: 700px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner a {
+        font-size: 11px;
+    }
+
+    .work-items img {
+        width: calc(100% / 2 - 20px / 2);
+    }
+
+    .works h2 {
+
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .work-items img {
+        width: 100%;
+    }
+
+    .menu li {
+        font-size: 9px;
+    }
+
+    .menu ul {
+        gap: 8px;
+    }
+}
